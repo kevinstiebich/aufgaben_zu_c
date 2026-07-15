@@ -7,10 +7,12 @@ int main() {
     
     if (eingabe == geheim) {
         printf("Korrekt!");
+        return 0;
     } else if (eingabe >= geheim) {
         printf("Deine Zahl ist zu groß!\n");
+        return 1;
     } else {
         printf("Deine Zahl ist zu klein!\n");
+        return 1;
     }
-    return 0;
 }
