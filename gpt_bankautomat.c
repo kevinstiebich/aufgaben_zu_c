@@ -32,10 +32,11 @@ int main() {
                 printf("Wieviel Geld möchtest du abheben? Bitte Betrag eingeben: ");
                 scanf("%d", &abheben);
 
-                while (abheben < 0) {
-                    printf("Der Betrag muss mindestens 1€ betragen. Bitte neuen Betrag eingeben: ");
-                    scanf("%d", &abheben);
-                    while (abheben > kontostand) {
+                while (abheben <= 0 || abheben > kontostand) {
+                    if (abheben <= 0) {
+                        printf("Der Betrag muss mindestens 1€ betragen. Bitte neuen Betrag eingeben: ");
+                        scanf("%d", &abheben);
+                    } else {
                         printf("Der Betrag übersteigt deinen Kontostand. Bitte gebe einen neuen Betrag ein: ");
                         scanf("%d", &abheben);
                     }
