@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main() {
-    int zustand = 3, befehl;
+int main(int zustand) {
+    int befehl;
     //Zustaende: 1 = happy, 2 = sad, 3 = tired, 4 = confused
 
     printf("Gebe einen Befehl ein (1 = blink, 2 = spin, 3 = beep): ");
