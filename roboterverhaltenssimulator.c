@@ -10,9 +10,7 @@ int main() {
     if (befehl > 3 || befehl < 1) {
         printf("Üngültige Eingabe.\n");
         return 1;
-    }
-
-    if (zustand == 1) {
+    } else if (zustand == 1) {
         if (befehl == 1) {
             printf("Der Roboter zwinkert dir zu!\n");
         } else if (befehl == 2) {
