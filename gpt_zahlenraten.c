@@ -3,8 +3,8 @@
 int main() {
     int geheim = 23, eingabe = 0, counter = 0;
 
-    while (geheim != eingabe && counter <= 10) {
-        printf("Gebe eine Zahl zwischen 1 und 100 ein: ");
+    while (geheim != eingabe && counter < 10) {
+        printf("Gib eine Zahl zwischen 1 und 100 ein: ");
         scanf("%d", &eingabe);
 
         while (eingabe > 100 || eingabe < 1) {
