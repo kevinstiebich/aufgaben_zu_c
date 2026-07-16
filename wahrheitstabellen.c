@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, a_or_b;
+    int a, b, ergebnis;
 
     //A OR B
     printf("A | B | A OR B\n");
@@ -9,38 +9,38 @@ int main() {
 
     a = 0, b = 0;
     if (a == 1 || b == 1) {
-        a_or_b = 1;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 1;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     } else {
-        a_or_b = 0;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 0;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     }
 
     a = 0, b = 1;
     if (a == 1 || b == 1) {
-        a_or_b = 1;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 1;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     } else {
-        a_or_b = 0;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 0;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     }
 
     a = 1, b = 0;
     if (a == 1 || b == 1) {
-        a_or_b = 1;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 1;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     } else {
-        a_or_b = 0;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 0;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     }
 
     a = 1, b = 1;
     if (a == 1 || b == 1) {
-        a_or_b = 1;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 1;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     } else {
-        a_or_b = 0;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 0;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     }
 
     printf(" \n");
@@ -50,38 +50,38 @@ int main() {
 
     a = 0, b = 0;
     if (a == 1 && b == 1) {
-        a_or_b = 1;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 1;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     } else {
-        a_or_b = 0;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 0;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     }
 
     a = 0, b = 1;
     if (a == 1 && b == 1) {
-        a_or_b = 1;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 1;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     } else {
-        a_or_b = 0;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 0;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     }
 
     a = 1, b = 0;
     if (a == 1 && b == 1) {
-        a_or_b = 1;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 1;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     } else {
-        a_or_b = 0;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 0;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     }
 
     a = 1, b = 1;
     if (a == 1 && b == 1) {
-        a_or_b = 1;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 1;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     } else {
-        a_or_b = 0;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 0;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     }
 
     printf(" \n");
@@ -91,38 +91,38 @@ int main() {
 
     a = 0, b = 0;
     if (a == 1 ^ b == 1) {
-        a_or_b = 1;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 1;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     } else {
-        a_or_b = 0;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 0;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     }
 
     a = 0, b = 1;
     if (a == 1 ^ b == 1) {
-        a_or_b = 1;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 1;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     } else {
-        a_or_b = 0;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 0;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     }
 
     a = 1, b = 0;
     if (a == 1 ^ b == 1) {
-        a_or_b = 1;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 1;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     } else {
-        a_or_b = 0;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 0;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     }
 
     a = 1, b = 1;
     if (a == 1 ^ b == 1) {
-        a_or_b = 1;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 1;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     } else {
-        a_or_b = 0;
-        printf("%d | %d |   %d\n", a, b, a_or_b);
+        ergebnis = 0;
+        printf("%d | %d |   %d\n", a, b, ergebnis);
     }
 
     return 0;
