@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int kontostand = 1000, auswahl = 0, einzahlung, abheben;
+    int kontostand = 1000, auswahl = 0, einzahlung, abheben, counter = 0;
 
     while (auswahl != 4) {
         printf("1 = Kontostand anzeigen\n");
@@ -22,6 +22,11 @@ int main() {
                 while (einzahlung < 0) {
                     printf("Der Einzahlungsbetrag muss mindestens 1€ betragen. Bitte neuen Betrag eingeben: ");
                     scanf("%d", &einzahlung);
+                    counter++;
+                        if (counter >= 2) {
+                            printf("Zuviele Fehlversuche, versuchen Sie es später erneut.\n");
+                            return 1;
+                        }
                 }
 
                 kontostand = kontostand + einzahlung;
@@ -36,9 +41,19 @@ int main() {
                     if (abheben <= 0) {
                         printf("Der Betrag muss mindestens 1€ betragen. Bitte neuen Betrag eingeben: ");
                         scanf("%d", &abheben);
+                        counter++;
+                        if (counter >= 2) {
+                            printf("Zuviele Fehlversuche, versuchen Sie es später erneut.\n");
+                            return 1;
+                        }
                     } else {
                         printf("Der Betrag übersteigt deinen Kontostand. Bitte gebe einen neuen Betrag ein: ");
                         scanf("%d", &abheben);
+                        counter++;
+                        if (counter >= 2) {
+                            printf("Zuviele Fehlversuche, versuchen Sie es später erneut.\n");
+                            return 1;
+                        }
                     }
                 }
 
