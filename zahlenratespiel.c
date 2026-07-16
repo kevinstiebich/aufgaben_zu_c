@@ -6,9 +6,9 @@ int main() {
     scanf("%d", &eingabe);
     
     if (eingabe == geheim) {
-        printf("Korrekt!");
+        printf("Korrekt!\n");
         return 0;
-    } else if (eingabe >= geheim) {
+    } else if (eingabe > geheim) {
         printf("Deine Zahl ist zu groß!\n");
         return 1;
     } else {
